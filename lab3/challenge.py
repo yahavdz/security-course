@@ -14,3 +14,8 @@ for coin in coins:
      message = b'18051d0908f4cba9f23d474a3de4d96e3628a3d8232b75295adccca724e8272b'
      secret = cipher.decrypt(binascii.unhexlify(message))
      print("%s -> %s" % (coin, secret))
+     
+# explaination:
+# I took a list of the first 10 coins
+# Then check each of them if this is the correct coin by decrypting the message 
+# Print all the results and looking for normal message in the output
